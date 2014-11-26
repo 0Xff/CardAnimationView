@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePC-Qr-nhy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-PG-He6">
+                                        <rect key="frame" x="20" y="96" width="560" height="408"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-J4-nDi">
+                                        <rect key="frame" x="20" y="96" width="560" height="408"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.93084441969999998" blue="0.1852476237" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z12-lD-Yob">
+                                        <rect key="frame" x="20" y="96" width="560" height="408"/>
+                                        <color key="backgroundColor" red="0.40686335029999998" green="0.98039215690000003" blue="0.56613275969999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.40000000000000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pwt-J4-nDi" firstAttribute="top" secondItem="ePC-Qr-nhy" secondAttribute="top" constant="96" id="683-aw-iS7"/>
+                                    <constraint firstAttribute="trailing" secondItem="DRw-PG-He6" secondAttribute="trailing" constant="20" id="BVe-pu-f3d"/>
+                                    <constraint firstItem="DRw-PG-He6" firstAttribute="top" secondItem="ePC-Qr-nhy" secondAttribute="top" constant="96" id="BfZ-4f-6Cg"/>
+                                    <constraint firstAttribute="bottom" secondItem="pwt-J4-nDi" secondAttribute="bottom" constant="96" id="Bhx-zd-Xmd"/>
+                                    <constraint firstItem="z12-lD-Yob" firstAttribute="leading" secondItem="ePC-Qr-nhy" secondAttribute="leading" constant="20" id="H34-m9-Xox"/>
+                                    <constraint firstAttribute="bottom" secondItem="z12-lD-Yob" secondAttribute="bottom" constant="96" id="RMO-VI-sBx"/>
+                                    <constraint firstAttribute="trailing" secondItem="z12-lD-Yob" secondAttribute="trailing" constant="20" id="Wsi-NY-db7"/>
+                                    <constraint firstItem="DRw-PG-He6" firstAttribute="leading" secondItem="ePC-Qr-nhy" secondAttribute="leading" constant="20" id="gpk-xX-2Oz"/>
+                                    <constraint firstAttribute="bottom" secondItem="DRw-PG-He6" secondAttribute="bottom" constant="96" id="hSI-8W-pEF"/>
+                                    <constraint firstItem="z12-lD-Yob" firstAttribute="top" secondItem="ePC-Qr-nhy" secondAttribute="top" constant="96" id="lan-ew-elX"/>
+                                    <constraint firstItem="pwt-J4-nDi" firstAttribute="leading" secondItem="ePC-Qr-nhy" secondAttribute="leading" constant="20" id="oD8-cY-gog"/>
+                                    <constraint firstAttribute="trailing" secondItem="pwt-J4-nDi" secondAttribute="trailing" constant="20" id="vv1-Fx-jsJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ePC-Qr-nhy" secondAttribute="trailing" id="4gv-82-kcC"/>
+                            <constraint firstItem="ePC-Qr-nhy" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="B3u-kf-HGD"/>
+                            <constraint firstItem="ePC-Qr-nhy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="UvB-HE-aJS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ePC-Qr-nhy" secondAttribute="bottom" id="yeG-L4-ymU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fatherView" destination="ePC-Qr-nhy" id="mET-3e-mwo"/>
+                        <outlet property="imageView1" destination="DRw-PG-He6" id="caQ-fg-Un0"/>
+                        <outlet property="imageView2" destination="pwt-J4-nDi" id="TKP-qN-5rA"/>
+                        <outlet property="imageView3" destination="z12-lD-Yob" id="h6X-nX-KJC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="224" y="429"/>
         </scene>
     </scenes>
 </document>

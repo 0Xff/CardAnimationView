@@ -14,6 +14,7 @@
 		9238A9C71A24896200014644 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9238A9C61A24896200014644 /* Images.xcassets */; };
 		9238A9CA1A24896200014644 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9238A9C81A24896200014644 /* LaunchScreen.xib */; };
 		9238A9D61A24896200014644 /* CardCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238A9D51A24896200014644 /* CardCollectionTests.m */; };
+		9238A9E11A2489B500014644 /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238A9E01A2489B500014644 /* CardCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9238A9CF1A24896200014644 /* CardCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardCollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238A9D41A24896200014644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9238A9D51A24896200014644 /* CardCollectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCollectionTests.m; sourceTree = "<group>"; };
+		9238A9DF1A2489B500014644 /* CardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewCell.h; sourceTree = "<group>"; };
+		9238A9E01A2489B500014644 /* CardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				9238A9BE1A24896200014644 /* AppDelegate.m */,
 				9238A9C01A24896200014644 /* ViewController.h */,
 				9238A9C11A24896200014644 /* ViewController.m */,
+				9238A9DF1A2489B500014644 /* CardCollectionViewCell.h */,
+				9238A9E01A2489B500014644 /* CardCollectionViewCell.m */,
 				9238A9C31A24896200014644 /* Main.storyboard */,
 				9238A9C61A24896200014644 /* Images.xcassets */,
 				9238A9C81A24896200014644 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9238A9E11A2489B500014644 /* CardCollectionViewCell.m in Sources */,
 				9238A9C21A24896200014644 /* ViewController.m in Sources */,
 				9238A9BF1A24896200014644 /* AppDelegate.m in Sources */,
 				9238A9BC1A24896200014644 /* main.m in Sources */,
